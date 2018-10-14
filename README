@@ -1,0 +1,11 @@
+2018/12/05 9:28
+This is a socket-based network programming.It containts a server and client.
+
+
+server:
+    We create a socket and use accept to wait for a request from the client,
+    and cerate a child process to process the received request.
+client:
+    We connect tot the server,succeed after the connnection,get the input and 
+    send it to the server using send methods, and the server echoes the received
+    message.
