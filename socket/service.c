@@ -57,7 +57,7 @@ int main(int argc,char *argv[])
                 return (errno);
             } else if(pid == 0){ //child  for recevice  information from the client
                 struct sockaddr_in clientaddr;
-                socklen_t clientaddrlen = sizeof(cliendaddr);
+                socklen_t clientaddrlen = sizeof(clientaddr);
                 if(getpeername(acceptfd,(struct sockaddr *)&clientaddr,&clientaddrlen) < 0) {
                     printf("getpeername error.\n");
                 } else {
